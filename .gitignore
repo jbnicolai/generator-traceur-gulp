@@ -1,0 +1,15 @@
+node_modules/
+dist/
+build/
+bower_components/
+temp/
+coverage/
+*.*~
+.tmp
+.sass-cache
+.classpath
+.project
+.settings
+.idea/workspace.xml
+.svn
+.externalToolBuilders

@@ -1,0 +1,30 @@
+{
+  "name": "generator-traceur-gulp",
+  "version": "1.0.0",
+  "description": "Yeoman Generator for Traceur/Gulp projects",
+  "main": "app/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/efvincent/generator-traceur-gulp"
+  },
+  "keywords": [
+    "yeoman-generator",
+    "yo",
+    "gulp",
+    "traceur"
+  ],
+  "author": "Eric F. Vincent",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/efvincent/generator-traceur-gulp/issues"
+  },
+  "homepage": "https://github.com/efvincent/generator-traceur-gulp",
+  "dependencies": {
+    "chalk": "^0.5.1",
+    "yeoman-generator": "^0.18.5",
+    "yosay": "^1.0.1"
+  }
+}
