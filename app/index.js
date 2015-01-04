@@ -11,6 +11,16 @@ module.exports = yo.generators.Base.extend({
 
     this.argument('appname', { type: String, optional: true, defaults: this._.camelize(this.appname) });
 
+    this.option('skip-install', {
+      desc: 'Skips the installation of dependencies',
+      type: Boolean
+    });
+
+    this.option('skip-install-message', {
+      desc: 'Skips the message after the installation of dependencies',
+      type: Boolean
+    });
+
     // custom code here
     this.log(yosay('Welcome to EFVincent\'s ' + chalk.green('Traceur') +
       ' client side project generator.' +
@@ -58,6 +68,13 @@ module.exports = yo.generators.Base.extend({
       this.fs.copy(
         this.templatePath('app/_externalModule.js'),
         this.destinationPath('app/externalModule.js'));
+    },
+
+    install: function() {
+      this.installDependencies({
+        skipMessage: this.options['skip-install-message'],
+        skipInstall: this.options['skip-install']
+    });
     }
   }
 });
