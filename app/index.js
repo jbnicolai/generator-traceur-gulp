@@ -9,17 +9,15 @@ module.exports = yo.generators.Base.extend({
   constructor: function() {
     yo.generators.Base.apply(this, arguments);
 
-    // appname required argument
-    this.log('Appname starts as: ' + chalk.green(this.appname));
-    this.log('api: ', this);
-
     this.argument('appname', { type: String, optional: true, defaults: this._.camelize(this.appname) });
 
     // custom code here
-    this.log(yosay('Welcome to EFVincent\'s ' + chalk.red('Traceur') +
-      ' client side project generator! ' +
-      'Using this you\'ll create a static web ' +
-      ' site that builds using Gulp and compiles using Traceur! :D'));
+    this.log(yosay('Welcome to EFVincent\'s ' + chalk.green('Traceur') +
+      ' client side project generator.' +
+      ' Using this you\'ll create a static web' +
+      ' site that builds using ' + chalk.cyan('Gulp') +
+      ' and compiles and uses ' + 
+      chalk.cyan('Traceur') + ' with ' + chalk.yellow('ES6 modules') + '!'));
   },
 
   prompting: function() {
