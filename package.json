@@ -1,6 +1,6 @@
 {
   "name": "generator-traceur-gulp",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Generate Traceur projects built with Gulp using ES6 Modules",
   "main": "app/index.js",
   "scripts": {
