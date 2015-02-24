@@ -23,7 +23,7 @@
   },
   "homepage": "https://github.com/efvincent/generator-traceur-gulp",
   "dependencies": {
-    "chalk": "^0.5.1",
+    "chalk": "^1.0.0",
     "yeoman-generator": "^0.18.5",
     "yosay": "^1.0.1"
   }
